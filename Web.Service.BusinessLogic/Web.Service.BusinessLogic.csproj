@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Web.Service.BusinessModel\Web.Service.BusinessModel.csproj" />
+    <ProjectReference Include="..\Web.Service.IBusinessLogic\Web.Service.BusinessLogic.Interfaces.csproj" />
+    <ProjectReference Include="..\Web.Service.Services\Web.Service.Services.csproj" />
+  </ItemGroup>
+
+</Project>
