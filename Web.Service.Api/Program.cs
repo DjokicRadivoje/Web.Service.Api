@@ -14,7 +14,7 @@ Log.Logger = new LoggerConfiguration()
     .WriteTo.File("logs/log-.txt", rollingInterval: RollingInterval.Day) // Log u fajl, kreira novi fajl svaki dan
     .CreateLogger();
 
-builder.Host.UseSerilog(); // Menjamo podrazumevani logger sa Serilogom (da bi logove cuvali u fajlu)
+builder.Host.UseSerilog(); // Menjamo podrazumevani logger sa Serilogom (da bi logove cuvali u fajlu).
 
 //Dodajemo automapper
 builder.Services.AddAutoMapper(typeof(DefaultProfile));
