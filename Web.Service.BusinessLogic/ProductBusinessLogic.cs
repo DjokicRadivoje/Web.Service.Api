@@ -30,7 +30,7 @@ namespace Web.Service.BusinessLogic
             var result = await _productService.GetProduct(serviceProductRequest);
             if (result == null)
             {
-                this._logger.LogError($"Došlo je do greške");
+                this._logger.LogError($"Došlo je do greške; Request: {request}, ID: {request.Id}" );
                 return response;
             }
 
